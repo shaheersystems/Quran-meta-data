@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&family=Katibeh&family=Montserrat&family=Qahiri&family=Reem+Kufi:wght@700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-wrap {
+  height: 10vh;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  position: sticky;
+  background: white;
+  top: 0%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav {
+  max-width: 90%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  font-family: "Fira Code", calibri;
+}
+.btn a {
+  padding: 7px 25px;
+  color: white;
+  text-decoration: none;
+  background: #14c38e;
+  border-radius: 5px;
+  font-family: "Fira Code", calibri;
+}
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+.banner {
+  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  text-align: center;
+}
+.banner h1 {
+  font-family: "Reem Kufi", calibri;
+  font-size: 50px;
+}
+.banner p {
+  font-family: "Katibeh", calibri;
+  font-size: 30px;
+}
+.tab-bar {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+  gap: 5px;
+}
+.tab-bar span {
+  padding: 5px 25px;
+  font-size: 18px;
+  font-family: "Fira Code", calibri;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tab-bar span:hover {
+  transition: 0.2s all;
+  background: rgba(0, 0, 0, 0.075);
+}
+.cards {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+.card {
+  min-height: 30vh;
+  padding: 20px;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.arabicName {
+  font-family: "Reem Kufi", calibri;
 }
 
-.App-link {
-  color: #61dafb;
+.card .name {
+  display: flex;
+  flex: 1;
+  font-family: "Fira Code", calibri;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.number {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Fira Code", calibri;
+}
+.heading {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  font-family: "Fira Code";
+  padding: 0px 8px;
 }
