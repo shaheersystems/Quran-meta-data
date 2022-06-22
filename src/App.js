@@ -5,6 +5,7 @@ import Banner from "./components/Banner";
 import TabBar from "./components/TabBar";
 import Card from "./components/Card";
 import Heading from "./components/Heading";
+import Footer from "./components/Footer";
 import { useState, useEffect } from "react";
 import React from "react";
 function App() {
@@ -132,6 +133,7 @@ function App() {
           : tab === "Meccan"
           ? meccanSurahs()
           : medinanSurahs()}
+        <Footer />
       </Container>
     </div>
   );
