@@ -131,10 +131,15 @@
 }
 .links {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   font-family: "Fira Code", calibri;
 }
 .links a {
   color: black;
   text-decoration: none;
+  font-size: 22px;
+}
+.links a:hover {
+  color: #14c38e;
+  transition: 0.2s all;
 }
