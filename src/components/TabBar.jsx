@@ -1,11 +1,17 @@
 import React from "react";
 
-function TabBar() {
+function TabBar(props) {
   return (
     <div className="tab-bar">
-      <span className="tab1">All</span>
-      <span className="tab1">Meccan</span>
-      <span className="tab1">Medinan</span>
+      <span className={props.classAll} onClick={props.handleAll}>
+        All
+      </span>
+      <span className={props.classMeccan} onClick={props.handleMeccan}>
+        Meccan
+      </span>
+      <span className={props.classMedinan} onClick={props.handleMedinan}>
+        Medinan
+      </span>
     </div>
   );
 }
